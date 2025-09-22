@@ -8,5 +8,5 @@
   "type": "onlinestream-provider",
   "language": "typescript",
   "lang": "en",
-  "payload": "export default class AutoDUBGojoWtf { id = 'AutoDUB-GojoWtf'; name = 'GojoWtf Dub Only'; supportsDub = true; async search(query) { return []; } async findEpisodes(id) { return []; } async getStream(id) { return null; } }"
+  "payload": "export default class AutoDUBGojoWtf { id = 'autodub_gojowtf'; name = 'GojoWtf Dub Only'; supportsDub = true; async search(query) { return []; } async findEpisodes(id) { return []; } async getStream(id) { return null; } }"
 }
