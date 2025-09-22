@@ -1,9 +1,13 @@
 {
   "id": "autodub-gojowtf",
   "name": "AutoDub for GojoWTF",
-  "version": "1.0.0",
   "description": "Automatically force dub (English audio) on the GojoWTF anime provider, with a user toggle.",
+  "manifestURI": "https://raw.githubusercontent.com/mrquix1/AutoDUB/main/manifest.json",
+  "version": "1.0.0",
   "author": "mrquix1",
+  "type": "client-extension",           // Use 'client-extension' or 'custom' to distinguish from providers
+  "language": "javascript",             // Your extension is JavaScript
+  "lang": "en",
   "providers": ["gojowtf"],
   "scripts": [
     "autodub-gojowtf.js"
@@ -15,5 +19,6 @@
       "default": true,
       "label": "Always prefer Dub (English audio) when available"
     }
-  ]
+  ],
+  "payload": ""                         // Leave empty for client extensions
 }
