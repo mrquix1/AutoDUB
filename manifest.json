@@ -1,13 +1,12 @@
 {
   "id": "autodub_gojowtf",
-  "name": "AutoDUB - GojoWtf",
+  "name": "AutoDUB GojoWtf",
+  "manifestURI": "https://raw.githubusercontent.com/mrquix1/AutoDUB/refs/heads/main/manifest.json",
   "version": "1.0.0",
-  "description": "Automatically switches anime to English dub using GojoWtf. More providers coming soon!",
+  "description": "Automatically switches anime to English dub using GojoWtf.",
   "author": "mrquix1",
-  "type": "anime-provider",
-  "languages": ["en"],
-  "supportsDub": true,
-  "source": "https://gojo.wtf",
-  "icon": "icon.png",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
   "main": "src/index.ts"
 }
