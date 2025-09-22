@@ -8,5 +8,5 @@
   "type": "onlinestream-provider",
   "language": "typescript",
   "lang": "en",
-  "payload": "https://raw.githubusercontent.com/mrquix1/AutoDUB/refs/heads/main/src/index.ts"
+  "payload": "export default class AutoDUBGojoWtf { id = 'AutoDUB-GojoWtf'; name = 'GojoWtf Dub Only'; supportsDub = true; async search(query) { return []; } async findEpisodes(id) { return []; } async getStream(id) { return null; } }"
 }
