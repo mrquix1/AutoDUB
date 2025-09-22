@@ -5,8 +5,8 @@
   "manifestURI": "https://raw.githubusercontent.com/mrquix1/AutoDUB/main/manifest.json",
   "version": "1.0.0",
   "author": "mrquix1",
-  "type": "client-extension",           // Use 'client-extension' or 'custom' to distinguish from providers
-  "language": "javascript",             // Your extension is JavaScript
+  "type": "onlinestream-provider",
+  "language": "javascript",
   "lang": "en",
   "providers": ["gojowtf"],
   "scripts": [
@@ -20,5 +20,5 @@
       "label": "Always prefer Dub (English audio) when available"
     }
   ],
-  "payload": ""                         // Leave empty for client extensions
+  "payload": ""
 }
