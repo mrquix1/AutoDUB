@@ -1,12 +1,9 @@
-{
-  "id": "autodub_gojo_wtf",
-  "name": "AutoDUB GojoWtf",
-  "description": "Automatically switches anime to English dub using GojoWtf.",
-  "manifestURI": "https://raw.githubusercontent.com/mrquix1/AutoDUB/refs/heads/main/manifest.json",
-  "version": "1.0.0",
-  "author": "mrquix1",
-  "type": "onlinestream-provider",
-  "language": "typescript",
-  "lang": "en",
-  "payload": "(function(){ return { id:'autodub_gojo_wtf', name:'GojoWtf Dub Only', supportsDub:true, search:function(query){return[];}, findEpisodes:function(id){return[];}, getStream:function(id){return null;} }; })()"
+export default class AutoDUBGojoWtf {
+    id = 'autodub_gojo_wtf';
+    name = 'GojoWtf Dub Only';
+    supportsDub = true;
+
+    async search(query) { return []; }
+    async findEpisodes(id) { return []; }
+    async getStream(id) { return null; }
 }
