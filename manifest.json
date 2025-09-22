@@ -1,12 +1,14 @@
 {
-  "id": "autodub_gojo_wtf",
+  "id": "autodubgojowtf",
   "name": "AutoDUB GojoWtf",
-  "description": "Automatically switches anime to English dub using GojoWtf.",
-  "manifestURI": "https://raw.githubusercontent.com/mrquix1/AutoDUB/refs/heads/main/manifest.json",
   "version": "1.0.0",
-  "author": "mrquix1",
-  "type": "onlinestream-provider",
+  "manifestURI": "https://raw.githubusercontent.com/mrquix1/AutoDUB/refs/heads/main/manifest.json",
   "language": "typescript",
+  "type": "onlinestream-provider",
+  "description": "AutoDUB automatically fetches English dubs from multiple anime sources.",
+  "author": "mrquix1",
+  "icon": "",
+  "website": "",
   "lang": "en",
-  "payload": "export default class AutoDUBGojoWtf{constructor(){this.id='autodub_gojo_wtf';this.name='GojoWtf Dub Only';this.supportsDub=true;}search(query){return[];}findEpisodes(id){return[];}getStream(id){return null;}}"
+  "payload": "(function(){return {id:'autodubgojowtf',name:'AutoDUB GojoWtf',supportsDub:true,episodeServers:['pahe','zoro','zaza','bato','megg'],search:async function(query){const normalizedQuery=query.query;let url=`https://backend.animetsu.to/api/anime/search?query=${encodeURIComponent(normalizedQuery)}&page=1&year=${query.year!=null?query.year:'any'}`;try{let response=await fetch(url,{method:'GET',headers:{'Referer':'https://animetsu.to','User-Agent':'Mozilla/5.0'}}).then(r=>r.text());let data=JSON.parse(response);if(data?.total==0){url=`https://backend.animetsu.to/api/anime/search?query=${encodeURIComponent(query.query)}&page=1&year=${query.year!=null?query.year:'any'}`;response=await fetch(url,{method:'GET',headers:{'Referer':'https://animetsu.to','User-Agent':'Mozilla/5.0'}}).then(r=>r.text());data=JSON.parse(response)}const results=[];throw new Error('No results found')}catch(e){console.error(e);throw new Error(e)}},findEpisodes:async function(id){try{return []}catch(e){console.error(e);throw new Error(e)}},findEpisodeServer:async function(episode,server){try{return null}catch(e){console.error(e);throw new Error(e)}}}})()"
 }
