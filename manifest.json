@@ -5,10 +5,11 @@
   "manifestURI": "https://raw.githubusercontent.com/mrquix1/AutoDUB/main/manifest.json",
   "version": "1.0.0",
   "author": "mrquix1",
-  "type": "onlinestream-provider",
+  "type": "custom-extension",
   "language": "javascript",
   "lang": "en",
   "providers": ["gojowtf"],
+  "payload": "",
   "payloadUrl": "https://raw.githubusercontent.com/mrquix1/AutoDUB/main/autodub-gojowtf.js",
   "settings": [
     {
