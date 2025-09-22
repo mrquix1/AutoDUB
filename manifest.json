@@ -1,12 +1,12 @@
 {
   "id": "autodub_gojowtf",
   "name": "AutoDUB GojoWtf",
+  "description": "Automatically switches anime to English dub using GojoWtf.",
   "manifestURI": "https://raw.githubusercontent.com/mrquix1/AutoDUB/refs/heads/main/manifest.json",
   "version": "1.0.0",
-  "description": "Automatically switches anime to English dub using GojoWtf.",
   "author": "mrquix1",
   "type": "onlinestream-provider",
   "language": "typescript",
   "lang": "en",
-  "main": "src/index.ts"
+  "payload": "https://raw.githubusercontent.com/mrquix1/AutoDUB/refs/heads/main/src/index.ts"
 }
