@@ -1,0 +1,12 @@
+{
+  "id": "AutoDUB-GojoWtf",
+  "name": "GojoWtf Dub Only",
+  "version": "1.0.0",
+  "description": "Automatically switches anime to English dub using GojoWtf. More providers coming soon!",
+  "author": "mrquix1",
+  "type": "anime-provider",
+  "languages": ["en"],
+  "supportsDub": true,
+  "source": "https://gojo.wtf",
+  "icon": "icon.png"
+}
