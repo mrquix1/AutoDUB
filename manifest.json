@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "description": "Automatically force dub (English audio) on the GojoWTF anime provider, with a user toggle.",
   "author": "mrquix1",
-  "providers": [],
   "scripts": [
     "autodub-gojowtf.js"
   ],
+  "providers": ["gojowtf"],
   "settings": [
     {
       "id": "forceDub",
