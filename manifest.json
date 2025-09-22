@@ -9,9 +9,7 @@
   "language": "javascript",
   "lang": "en",
   "providers": ["gojowtf"],
-  "scripts": [
-    "autodub-gojowtf.js"
-  ],
+  "payloadUrl": "https://raw.githubusercontent.com/mrquix1/AutoDUB/main/autodub-gojowtf.js",
   "settings": [
     {
       "id": "forceDub",
@@ -19,6 +17,5 @@
       "default": true,
       "label": "Always prefer Dub (English audio) when available"
     }
-  ],
-  "payload": ""
+  ]
 }
